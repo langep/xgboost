@@ -73,6 +73,12 @@ You might need to run the following command with `sudo` if you run into some per
 pip install xgboost
 ```
 
+You might need to force cmake to use the newly installed *gcc-5* with:
+
+```bash
+CC=/usr/local/bin/gcc-5 CXX=/usr/local/bin/g++-5 pip install xgboost
+```
+
 **Build from the source code - advanced method**
 
 First, obtain gcc-7.x.x with brew (https://brew.sh/) if you want multi-threaded version, otherwise, Clang is ok if OpenMP / multi-threaded is not required. Note: installation of `gcc` can take a while (~ 30 minutes)
